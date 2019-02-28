@@ -1,4 +1,55 @@
 <mat-toolbar color="primary" class="crm-navigation-bar">
+  <mat-toolbar-row>
+    <div fxFlex fxLayout fxShrink="1" fxHide.gt-xs>
+      <button mat-icon-button (click)="toggleSidenav.emit()">
+        <mat-icon>menu</mat-icon>
+      </button>
+    </div>
+    <!--<div fxFlex fxLayout>
+      <div fxLayout fxFlexAlign="center" class="logo">
+        <a routerLink="/" fxLayout>PostalPortal</a>
+      </div>
+      <div fxHide.xs>
+        <ul fxLayout fxLayoutGap="10px" class="navigation-item">
+          <li><a routerLink="/">Notifications</a></li>
+          <li><a routerLink="/">Accounts</a></li>
+          <li><a routerLink="/">Senders</a></li>
+          <li><a routerLink="/">BulkNotification</a></li>
+        </ul>
+      </div>
+    </div>-->
+    <div fxFlex fxLayout fxLayoutAlign="flex-start">
+      <ul fxLayout fxLayoutGap="10px" class="navigation-items">
+        <li fxHide.xs>
+          <a routerLink="/">Notifications</a>
+        </li>
+      </ul>
+    </div>
+    <div fxFlex fxLayout fxLayoutAlign="flex-end">
+      <ul fxLayout fxLayoutGap="10px" class="navigation-items">
+        <li fxHide.xs>
+          <button mat-icon-button>
+            <h4>dev</h4>
+          </button>
+        </li>
+        <li fxHide.xs>
+          <button mat-icon-button>
+            <mat-icon>exit_to_app</mat-icon>
+          </button>
+        </li>
+      </ul>
+      <!--
+            <div class="navigation-info">
+              <div class="username">dev</div>
+              <mat-icon>exit_to_app</mat-icon>
+            </div>
+      -->
+    </div>
+  </mat-toolbar-row>
+</mat-toolbar>
+
+<!--
+<mat-toolbar color="primary" class="crm-navigation-bar">
 
   <mat-toolbar-row>
 
@@ -43,3 +94,4 @@
   </mat-toolbar-row>
 
 </mat-toolbar>
+-->

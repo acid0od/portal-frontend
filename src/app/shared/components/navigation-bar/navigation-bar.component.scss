@@ -1,4 +1,6 @@
 $app-toolbar-title-padding: 16px !default;
+$link-color: hsla(0,0%,100%,.75) !default;
+$link-hover-color: #FFFFFF !default;
 
 .toolbar-title {
   margin: 0 $app-toolbar-title-padding 0 $app-toolbar-title-padding;
@@ -9,6 +11,24 @@ $app-toolbar-title-padding: 16px !default;
   padding: 0;
   margin: 0;
   cursor: pointer;
+}
 
-  // vertical-align: middle;
+.navigation-items a {
+  color: $link-color;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  text-decoration: none;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+}
+
+.navigation-items a:hover {
+  color: $link-hover-color;
+}
+
+.navigation-items a:active {
+  color: $link-hover-color;
 }
