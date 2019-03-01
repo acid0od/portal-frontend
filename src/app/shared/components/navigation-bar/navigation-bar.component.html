@@ -18,21 +18,34 @@
         </ul>
       </div>
     </div>-->
+
     <div fxFlex fxLayout fxLayoutAlign="flex-start">
-      <ul fxLayout fxLayoutGap="10px" class="navigation-items">
-        <li fxHide.xs>
+      <ul fxLayout fxLayoutGap="10px" class="navigation-items" fxHide.xs>
+        <div fxLayout gdGap="60px 60px">
+          <h2>Postal Portal</h2>
+        </div>
+        <li>
           <a routerLink="/">Notifications</a>
+        </li>
+        <li>
+          <a routerLink="/">Accounts</a>
+        </li>
+        <li>
+          <a routerLink="/">Senders</a>
+        </li>
+        <li>
+          <a routerLink="/">BulkNotifications</a>
         </li>
       </ul>
     </div>
     <div fxFlex fxLayout fxLayoutAlign="flex-end">
       <ul fxLayout fxLayoutGap="10px" class="navigation-items">
-        <li fxHide.xs>
+        <li>
           <button mat-icon-button>
             <h4>dev</h4>
           </button>
         </li>
-        <li fxHide.xs>
+        <li>
           <button mat-icon-button>
             <mat-icon>exit_to_app</mat-icon>
           </button>
