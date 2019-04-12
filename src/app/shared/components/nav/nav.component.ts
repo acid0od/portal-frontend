@@ -4,6 +4,8 @@ interface ROUTE {
   icon?: string;
   route?: string;
   title?: string;
+  activeOptions?: boolean;
+  user?: string;
 }
 
 @Component({
@@ -12,35 +14,53 @@ interface ROUTE {
   styleUrls: ['./nav.component.scss']
 })
 export class NavComponent implements OnInit {
-  myWorkRoutes: ROUTE[] = [
+  public APP_TOOLBAR_TITLE = 'Postal Portal';
+
+  notifications: ROUTE[] = [
     {
       icon: 'assignment',
-      route: 'sales/activities',
-      title: 'Activities',
+      route: 'notifications/edit',
+      title: 'New Notification',
+      user: 'dev',
+      activeOptions: true
     }, {
       icon: 'dashboard',
-      route: 'sales/dashboards',
-      title: 'Dashboards',
+      route: 'notifications/list',
+      title: 'All Notifications',
+      user: 'dev',
+      activeOptions: true
     }
   ];
 
-  customerRoutes: ROUTE[] = [
+  senders: ROUTE[] = [
     {
-      icon: 'contacts',
-      route: 'sales/accounts',
-      title: 'Accounts',
+      icon: 'assignment',
+      route: 'senders/edit',
+      title: 'New Sender',
+      user: 'dev',
+      activeOptions: true
     }, {
-      icon: 'people',
-      route: 'sales/contacts',
-      title: 'Contacts',
+      icon: 'dashboard',
+      route: 'notifications/list',
+      title: 'All Senders',
+      user: 'dev',
+      activeOptions: true
+    }
+  ];
+
+  bulkNotifications: ROUTE[] = [
+    {
+      icon: 'insert_comment',
+      route: 'bulkNotification/edit',
+      title: 'New BulkNotification',
+      user: 'dev',
+      activeOptions: true
     }, {
-      icon: 'settings_phone',
-      route: 'sales/leads',
-      title: 'Leads',
-    }, {
-      icon: 'account_box',
-      route: 'sales/opportunities',
-      title: 'Opportunities',
+      icon: 'dashboard',
+      route: 'bulkNotification/list',
+      title: 'All BulkNotifications',
+      user: 'dev',
+      activeOptions: true
     }
   ];
 

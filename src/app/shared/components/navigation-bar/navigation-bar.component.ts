@@ -7,7 +7,6 @@ interface ROUTE {
   title?: string;
   activeOptions?: boolean;
   user?: string;
-
 }
 
 @Component({
